@@ -11,7 +11,7 @@ type (
 		Username	string    	`json:"username"`
 		Email  		string    	`json:"email"`
 		Password 	string		`json:"password"`
-		CreatedAt 	time.Time 	`json:"created_at"`
-		UpdatedAt 	time.Time 	`json:"updated_at"`
+		CreateAt 	time.Time 	`json:"createat"`
+		UpdateAt 	time.Time 	`json:"updateat"`
 	}
 )

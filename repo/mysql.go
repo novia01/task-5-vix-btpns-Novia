@@ -12,15 +12,15 @@ import (
 )
 
 const (
-	table          = "user"
-	table2		= "foto"
-	layoutDateTime = "2006-01-02 15:04:05"
+	table          	= "user"
+	table2			= "foto"
+	layoutDateTime 	= "2006-01-02 15:04:05"
 )
 
 
 //USER ENDPOINT
 
-// Insert
+// InsertUser
 func Insert(ctx context.Context, usr models.User) error {
 
 	db, err := config.MySQL()
@@ -98,7 +98,7 @@ func GetAll(ctx context.Context) ([]models.User, error) {
 	return users, nil
 }
 
-// Update
+// UpdateUser
 func Update(ctx context.Context, usr models.User) error {
 
 	db, err := config.MySQL()
@@ -127,7 +127,7 @@ func Update(ctx context.Context, usr models.User) error {
 }
 
 
-// Delete
+// DeleteUSer
 func Delete(ctx context.Context, usr models.User) error {
 
 	db, err := config.MySQL()

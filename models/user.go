@@ -13,5 +13,5 @@ type (
 		Password 	string		`json:"password"`
 		CreatedAt 	time.Time 	`json:"createdat"`
 		UpdatedAt 	time.Time 	`json:"updatedat"`
-	}
+	}	
 )
